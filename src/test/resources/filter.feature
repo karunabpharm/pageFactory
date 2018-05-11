@@ -4,12 +4,12 @@ Feature: Filters
   I want to filter my search results
   So that i can view applied filters product
 
-  @regression
+  @regression @krn
   Scenario: Filter by review
     Given I am on homepage
-    When I search for "<nike>"
-    And I set filter "customer rating" is "5"
-    Then I should see products are filtered
+    When I search for "nike"
+    And I set filter "customer rating" is "5only"
+    Then I should see products are filtered with "5.0"
 
   @regression
   Scenario: Filter by price

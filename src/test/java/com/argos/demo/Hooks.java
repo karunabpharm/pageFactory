@@ -15,7 +15,7 @@ public class Hooks {
         driverFactory.navigateTo("http://www.argos.co.uk/");
     }
 
-    @After
+   // @After
     public void tearDown(){
         driverFactory.closeBrowser();
     }

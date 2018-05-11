@@ -15,5 +15,8 @@ public class HeaderPage extends DriverFactory {
     public void doSearch(String term){
         searchTxtBox.sendKeys(term);
         searchBtn.click();
+        sleep(3000);
     }
+
+
 }
