@@ -24,6 +24,7 @@ public class FiltersSteps {
     @Then("^I should see products are filtered with \"([^\"]*)\"$")
     public void iShouldSeeProductsAreFilteredWith(Double expected) {
         List<Double> actualRatings= searchResultsPage.getAllStarRatings();
+        System.out.println("list"+actualRatings);
         assertThat(actualRatings,everyItem(greaterThan(expected)));
     }
 }
