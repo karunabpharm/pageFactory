@@ -4,7 +4,7 @@ Feature: Filters
   I want to filter my search results
   So that i can view applied filters product
 
-  @regression
+  @regression @krn
   Scenario: Filter by review
     Given I am on homepage
     When I search for "nike"
